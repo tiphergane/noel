@@ -28,10 +28,10 @@
 /* Si les champs ne sont pas vide, alors on se connecte à la BDD et on envoie les infos */
 if(!empty($_POST["nom"] && $_POST["cadeau"] && $_POST["amazon"]))
 {
-$nd=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['nom']));
-$puk=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['cadeau']));
-$operateur=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['amazon']));
-$sql = "INSERT INTO wishes (NOM,CADEAU,AMAZON) VALUES ('$nd','$puk','$operateur')";
+$nom=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['nom']));
+$cadeau=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['cadeau']));
+$amazon=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['amazon']));
+$sql = "INSERT INTO wishes (NOM,CADEAU,AMAZON) VALUES ('$nom','$cadeau','$amazon')";
 if($conn->query($sql)===TRUE)
 {
 echo"<div id='resultat'>";
