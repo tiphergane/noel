@@ -25,7 +25,7 @@
 							                                die("Connection failed: " . $conn->connect_error);
 											                                }
 
-/* Si les champs ne sont pas vide, alors on se connecte à la BDD et on envoie les infos receuillie */
+/* Si les champs ne sont pas vide, alors on se connecte à la BDD et on envoie les infos */
 if(!empty($_POST["nom"] && $_POST["cadeau"] && $_POST["amazon"]))
 {
 $nd=htmlspecialchars(mysqli_real_escape_string($conn,$_POST['nom']));
