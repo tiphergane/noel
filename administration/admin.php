@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<?php include '../header.php'; ?>
+<?php require '../header.php'; ?>
 <div id="description">
 Pas encore pris le temps de le faire !
 </div>
-<?php include '../footer.php'; ?>
+<?php require '../footer.php'; ?>
 
